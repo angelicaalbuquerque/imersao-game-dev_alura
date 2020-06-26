@@ -43,7 +43,7 @@ São 5 aulas inéditas, explorando o JavaScript para GameDev, com os instrutores
 ### 📚 Grade do curso
 
 <details>
-  <summary>Dia 1: Motor do Jogo</summary>
+  <summary>Dia 1: Motor do Jogo ✔️</summary>
 
 - História
 - Personagem
@@ -92,9 +92,10 @@ São 5 aulas inéditas, explorando o JavaScript para GameDev, com os instrutores
 
 <p>O projeto foi desenvolvido com as seguintes tecnologias:</p>
 
-- Javascript
-- P5JS
-- Visual Studio Code
+- [Javascript](https://www.javascript.com/)
+- [P5.js](https://p5js.org/reference/)
+- [Prettier](https://prettier.io/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ## 📬 Entre em contato!
 
