@@ -53,7 +53,7 @@ São 5 aulas inéditas, explorando o JavaScript para GameDev, com os instrutores
 </details>
 
 <details>
-  <summary>Dia 2: Inimigos e colisão</summary>
+  <summary>Dia 2: Inimigos e colisão  ✔️</summary>
 
 - Sprites
 - Algoritmos de colisão
