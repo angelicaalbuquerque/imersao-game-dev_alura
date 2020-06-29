@@ -63,6 +63,9 @@ function setup() {
 function draw() {
   cenario.exibe();
   cenario.move();
+
   personagem.exibe();
+
   inimigo.exibe();
+  inimigo.move();
 }
