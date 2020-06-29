@@ -86,11 +86,18 @@ function setup() {
   // somDoJogo.loop();
 }
 
+function keyPressed() {
+  if (key === "ArrowUp") {
+    personagem.pula();
+  }
+}
+
 function draw() {
   cenario.exibe();
   cenario.move();
 
   personagem.exibe();
+  personagem.aplicaGravidade();
 
   inimigo.exibe();
   inimigo.move();
