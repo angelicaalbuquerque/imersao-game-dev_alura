@@ -2,6 +2,8 @@ let imagemCenario;
 let imagemPersonagem;
 let imagemInimigo;
 let cenario;
+let somDoJogo;
+let somDoPulo;
 let personagem;
 let inimigo;
 
@@ -35,6 +37,7 @@ const matrizInimigo = [
   [208, 626],
   [312, 626],
 ];
+
 const matrizPersonagem = [
   [0, 0],
   [220, 0],
@@ -59,6 +62,7 @@ function preload() {
   imagemPersonagem = loadImage("imagens/personagem/correndo.png");
   imagemInimigo = loadImage("imagens/inimigos/gotinha.png");
   somDoJogo = loadSound("sons/trilha_jogo.mp3");
+  somDoPulo = loadSound("sons/somPulo.mp3");
 }
 
 function setup() {
@@ -83,12 +87,13 @@ function setup() {
     104,
   );
   frameRate(40);
-  // somDoJogo.loop();
+  somDoJogo.loop();
 }
 
 function keyPressed() {
   if (key === "ArrowUp") {
     personagem.pula();
+    somDoPulo.play();
   }
 }
 
