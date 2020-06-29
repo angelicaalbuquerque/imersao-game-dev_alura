@@ -101,4 +101,9 @@ function draw() {
 
   inimigo.exibe();
   inimigo.move();
+
+  if (personagem.estaColidindo(inimigo)) {
+    console.log("Colidiu!");
+    noLoop();
+  }
 }
