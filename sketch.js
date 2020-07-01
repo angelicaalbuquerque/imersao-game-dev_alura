@@ -112,6 +112,8 @@ const matrizInimigoVoador = [
   [0, 750],
 ];
 
+const inimigos = [];
+
 function preload() {
   imagemCenario = loadImage("imagens/cenario/floresta.png");
   imagemPersonagem = loadImage("imagens/personagem/correndo.png");
@@ -135,7 +137,7 @@ function setup() {
     220,
     270,
   );
-  inimigo = new Inimigo(
+  const inimigo = new Inimigo(
     matrizInimigo,
     imagemInimigo,
     width - 52,
@@ -147,7 +149,7 @@ function setup() {
     10,
     200,
   );
-  inimigoVoador = new Inimigo(
+  const inimigoVoador = new Inimigo(
     matrizInimigoVoador,
     imagemInimigoVoador,
     width - 52,
@@ -159,7 +161,7 @@ function setup() {
     10,
     1500,
   );
-  inimigoGrande = new Inimigo(
+  const inimigoGrande = new Inimigo(
     matrizInimigoGrande,
     imagemInimigoGrande,
     width * 2,
@@ -171,6 +173,10 @@ function setup() {
     10,
     2500,
   );
+
+  inimigos.push(inimigo);
+  inimigos.push(inimigoGrande);
+  inimigos.push(inimigoVoador);
 
   frameRate(40);
   // somDoJogo.loop();
@@ -190,17 +196,13 @@ function draw() {
   personagem.exibe();
   personagem.aplicaGravidade();
 
-  inimigoGrande.exibe();
-  inimigoGrande.move();
+  inimigos.forEach((inimigo) => {
+    inimigo.exibe();
+    inimigo.move();
 
-  inimigoVoador.exibe();
-  inimigoVoador.move();
-
-  inimigo.exibe();
-  inimigo.move();
-
-  if (personagem.estaColidindo(inimigo)) {
-    console.log("Colidiu!");
-    noLoop();
-  }
+    if (personagem.estaColidindo(inimigo)) {
+      console.log("Colidiu!");
+      noLoop();
+    }
+  });
 }
