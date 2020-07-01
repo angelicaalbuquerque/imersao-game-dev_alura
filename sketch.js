@@ -72,6 +72,7 @@ function setup() {
     matrizPersonagem,
     imagemPersonagem,
     0,
+    30,
     110,
     135,
     220,
@@ -81,13 +82,14 @@ function setup() {
     matrizInimigo,
     imagemInimigo,
     width - 52,
+    30,
     52,
     52,
     104,
     104,
   );
   frameRate(40);
-  somDoJogo.loop();
+  // somDoJogo.loop();
 }
 
 function keyPressed() {
