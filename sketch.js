@@ -2,6 +2,7 @@ let imagemCenario;
 let imagemPersonagem;
 let imagemInimigo;
 let imagemInimigoGrande;
+let imagemInimigoVoador;
 
 let cenario;
 let somDoJogo;
@@ -9,6 +10,7 @@ let somDoPulo;
 let personagem;
 let inimigo;
 let inimigoGrande;
+let inimigoVoador;
 
 const matrizInimigo = [
   [0, 0],
@@ -91,10 +93,30 @@ const matrizInimigoGrande = [
   [800, 2000],
 ];
 
+const matrizInimigoVoador = [
+  [0, 0],
+  [200, 0],
+  [400, 0],
+  [0, 150],
+  [200, 150],
+  [400, 150],
+  [0, 300],
+  [200, 300],
+  [400, 300],
+  [0, 450],
+  [200, 450],
+  [400, 450],
+  [0, 600],
+  [200, 600],
+  [400, 600],
+  [0, 750],
+];
+
 function preload() {
   imagemCenario = loadImage("imagens/cenario/floresta.png");
   imagemPersonagem = loadImage("imagens/personagem/correndo.png");
   imagemInimigo = loadImage("imagens/inimigos/gotinha.png");
+  imagemInimigoVoador = loadImage("imagens/inimigos/gotinha-voadora.png");
   imagemInimigoGrande = loadImage("imagens/inimigos/troll.png");
   somDoJogo = loadSound("sons/trilha_jogo.mp3");
   somDoPulo = loadSound("sons/somPulo.mp3");
@@ -123,7 +145,19 @@ function setup() {
     104,
     104,
     10,
+    200,
+  );
+  inimigoVoador = new Inimigo(
+    matrizInimigoVoador,
+    imagemInimigoVoador,
+    width - 52,
+    200,
     100,
+    75,
+    200,
+    150,
+    10,
+    1500,
   );
   inimigoGrande = new Inimigo(
     matrizInimigoGrande,
@@ -135,8 +169,9 @@ function setup() {
     400,
     400,
     10,
-    500,
+    2500,
   );
+
   frameRate(40);
   // somDoJogo.loop();
 }
@@ -157,6 +192,9 @@ function draw() {
 
   inimigoGrande.exibe();
   inimigoGrande.move();
+
+  inimigoVoador.exibe();
+  inimigoVoador.move();
 
   inimigo.exibe();
   inimigo.move();
