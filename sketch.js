@@ -3,6 +3,7 @@ let imagemPersonagem;
 let imagemInimigo;
 let imagemInimigoGrande;
 let imagemInimigoVoador;
+let imagemGameOver;
 
 let cenario;
 let somDoJogo;
@@ -12,6 +13,7 @@ let inimigo;
 let inimigoGrande;
 let inimigoVoador;
 let pontuacao;
+let GameOver;
 
 const matrizInimigo = [
   [0, 0],
@@ -117,6 +119,7 @@ const inimigos = [];
 
 function preload() {
   imagemCenario = loadImage("imagens/cenario/floresta.png");
+  imagemGameOver = loadImage("imagens/assets/game-over.png");
   imagemPersonagem = loadImage("imagens/personagem/correndo.png");
   imagemInimigo = loadImage("imagens/inimigos/gotinha.png");
   imagemInimigoVoador = loadImage("imagens/inimigos/gotinha-voadora.png");
@@ -206,7 +209,7 @@ function draw() {
     inimigo.move();
 
     if (personagem.estaColidindo(inimigo)) {
-      console.log("Colidiu!");
+      image(imagemGameOver, width / 2 - 200, height / 3);
       noLoop();
     }
   });
