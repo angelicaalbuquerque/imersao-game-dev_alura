@@ -53,16 +53,21 @@ São 5 aulas inéditas, explorando o JavaScript para GameDev, com os instrutores
 </details>
 
 <details>
-  <summary>Dia 2: Inimigos e colisão  ✔️</summary>
+  <summary>Dia 2: Inimigos, gravidade e colisão  ✔️</summary>
 
 - Sprites
+- Pulos e gravidade
 - Algoritmos de colisão
 </details>
 
 <details>
-  <summary>Dia 3: Mapas, textos e powerup</summary>
+  <summary>Dia 3: Mais inimigos e pontuação ✔️</summary>
 
-- Deixando o jogo mais profissional
+- Powerup
+- Game Over
+- Novos inimigos
+- Jogo mais profissional
+
 </details>
 
 <details>
