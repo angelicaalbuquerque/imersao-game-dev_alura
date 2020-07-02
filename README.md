@@ -2,11 +2,12 @@
     <img src=".github\imersaogamedev.svg" width="200"/>
 </div>
 
-<h2 align="center">Imersão JavaScript Game Dev | Alura</h2>
+<h2 align="center">Imersão JavaScript Game Dev | <img alt="badge alura" align="center" src=".github\alura.svg"></h2>
 <h3 align="center">🚧 Em andamento 🚧</h3>
 
 <p align="center">
 <img alt="badge javascript" src=".github\javascript.svg">
+<img alt="badge p5js" src=".github\p5.svg">
 <img alt="badge vscode" src=".github\visual_studio_code.svg">
 </p>
 
