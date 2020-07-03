@@ -15,6 +15,8 @@ let inimigoVoador;
 let pontuacao;
 let GameOver;
 
+let inimigoAtual = 0;
+
 const matrizInimigo = [
   [0, 0],
   [104, 0],
@@ -152,7 +154,7 @@ function setup() {
     104,
     104,
     10,
-    200,
+    100,
   );
   const inimigoVoador = new Inimigo(
     matrizInimigoVoador,
@@ -164,7 +166,7 @@ function setup() {
     200,
     150,
     10,
-    1500,
+    100,
   );
   const inimigoGrande = new Inimigo(
     matrizInimigoGrande,
@@ -175,8 +177,8 @@ function setup() {
     200,
     400,
     400,
-    10,
-    2500,
+    15,
+    100,
   );
 
   inimigos.push(inimigo);
@@ -204,13 +206,23 @@ function draw() {
   personagem.exibe();
   personagem.aplicaGravidade();
 
-  inimigos.forEach((inimigo) => {
-    inimigo.exibe();
-    inimigo.move();
+  const inimigo = inimigos[inimigoAtual];
+  const inimigoVisivel = inimigo.x < -inimigo.largura;
 
-    if (personagem.estaColidindo(inimigo)) {
-      image(imagemGameOver, width / 2 - 200, height / 3);
-      noLoop();
+  inimigo.exibe();
+  inimigo.move();
+
+  if (inimigoVisivel) {
+    inimigoAtual++;
+
+    if (inimigoAtual > 2) {
+      inimigoAtual = 0;
     }
-  });
+    inimigo.velocidade = parseInt(random(10, 30));
+  }
+
+  if (personagem.estaColidindo(inimigo)) {
+    image(imagemGameOver, width / 2 - 200, height / 3);
+    noLoop();
+  }
 }
