@@ -14,6 +14,7 @@ let inimigoGrande;
 let inimigoVoador;
 let pontuacao;
 let GameOver;
+let jogo;
 
 let inimigoAtual = 0;
 
