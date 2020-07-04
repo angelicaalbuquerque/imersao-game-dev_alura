@@ -30,11 +30,11 @@
 ## ℹ️ Sobre
 
 <p>
-Oferecido pela <a href="https://www.alura.com.br/imersao-gamedev-javascript" target="_blank">Alura</a>, nesta imersão criaremos e publicaremos nosso próprimo game.
+Oferecido pela <a href="https://www.alura.com.br/imersao-gamedev-javascript" target="_blank">Alura</a>, nesta imersão criamos e publicamos nosso próprio game.
 </p>
 
 <p>
-São 5 aulas inéditas, explorando o JavaScript para GameDev, com os instrutores:
+Foram 5 aulas inéditas, explorando o JavaScript para GameDev, com os instrutores:
 
 - Guilherme Lima (Instrutor Alura)
 - Juliana Negreiros (Instrutora Alura)
@@ -72,11 +72,10 @@ São 5 aulas inéditas, explorando o JavaScript para GameDev, com os instrutores
 </details>
 
 <details>
-  <summary>Dia 4: Gerenciamento de estado</summary>
+  <summary>Dia 4: Gerenciamento de estado ✔️</summary>
 
 - Telas
 - Estados
-- História do jogo
 </details>
 
 <details>
