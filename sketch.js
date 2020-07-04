@@ -8,10 +8,7 @@ function setup() {
 }
 
 function keyPressed() {
-  if (key === "ArrowUp") {
-    personagem.pula();
-    somDoPulo.play();
-  }
+  jogo.keyPressed(key);
 }
 
 function draw() {

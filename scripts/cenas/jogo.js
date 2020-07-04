@@ -57,4 +57,11 @@ class Jogo {
     inimigos.push(inimigoGrande);
     inimigos.push(inimigoVoador);
   }
+
+  keyPressed(key) {
+    if (key === "ArrowUp") {
+      personagem.pula();
+      somDoPulo.play();
+    }
+  }
 }
