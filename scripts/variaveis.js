@@ -16,8 +16,6 @@ let pontuacao;
 let GameOver;
 let jogo;
 
-let inimigoAtual = 0;
-
 const matrizInimigo = [
   [0, 0],
   [104, 0],
