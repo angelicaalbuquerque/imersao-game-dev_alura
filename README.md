@@ -3,7 +3,6 @@
 </div>
 
 <h2 align="center">Imersão JavaScript Game Dev | <img alt="badge alura" align="center" src=".github\alura.svg"></h2>
-<h3 align="center">🚧 Em andamento 🚧</h3>
 
 <p align="center">
 <img alt="badge javascript" src=".github\javascript.svg">
@@ -79,19 +78,31 @@ Foram 5 aulas inéditas, explorando o JavaScript para GameDev, com os instrutore
 </details>
 
 <details>
-  <summary>Dia 5: Adicionando complexidade</summary>
+  <summary>Dia 5: Adicionando complexidade ✔️</summary>
 
 - Movimentação diferente dos inimigos
-- Powerups
+- Vidas
 </details>
 
 ## 💻 Projeto
 
-<p>Em breve.</p>
+<iframe src="https://drive.google.com/file/d/1LPqvvZl8xFzwG9JmXNoIVsQabpdwfaIL/preview" width="440" height="280"></iframe>
 
-## 🧭 Como rodar o projeto
+<p>"As Aventuras de Hipsta" é um game desenvolvido para desktop.
 
-<p>Em breve.</p>
+Nesta extraordinária história, a carismática bruxinha Hipsta tem a missão de proteger sua floresta verde e florida de seu principal inimigo, conhecido como Troll, um ogro tristonho e choroso, que foi expulso ao poluir o bosque com suas lágrimas, que arruinavam a beleza do lugar.
+
+Será que a você conseguirá ajudar a Hipsta na importante tarefa de manter o encanto da natureza? 🤔 [Jogue e descubra!](https://angelicaalbuquerque.github.io/imersao-game-dev_alura/)
+
+</p>
+
+## 🎮 Como jogar
+
+Acesse a [página do jogo](https://angelicaalbuquerque.github.io/imersao-game-dev_alura/).
+
+Ao clicar no botão "Iniciar", use a seta para cima (⬆️) para fazer com que a Hipsta drible seus inimigos, o ogro Troll e suas lágrimas de poluição. <em>Dica: ao clicar duas vezes, a bruxinha é capaz de dar um incrível pulo duplo sobre seus rivais!</em> 😮
+
+Quanto mais vezes você conseguir passar pelos inimigos, mais pontos acumulará! Mas atenção: você possui somente três tentativas antes do jogo acabar e o Troll, infelizmente, dominar a floresta da bruxinha Hipsta!
 
 ## 🚀 Tecnologias
 
