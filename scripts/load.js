@@ -8,6 +8,7 @@ function preload() {
   imagemVida = loadImage("imagens/assets/vida.png");
   imagemTelaInicial = loadImage("imagens/cenario/telainicial.png");
   fonteTelaInicial = loadFont("imagens/assets/fonteTelaInicial.otf");
+  fita = loadJSON("fita/fita.json");
   somDoJogo = loadSound("sons/trilha_jogo.mp3");
   somDoPulo = loadSound("sons/somPulo.mp3");
 }

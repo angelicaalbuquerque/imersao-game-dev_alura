@@ -20,6 +20,7 @@ let inimigoVoador;
 let pontuacao;
 let GameOver;
 
+let fita;
 let jogo;
 let cenaAtual = "jogo";
 let cenas;
