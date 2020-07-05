@@ -21,7 +21,7 @@
 <p align="center">
   <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-como-rodar-o-projeto">Como rodar o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-jogar">Como jogar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-Entre-em-contato">Contato</a>
 </p>
@@ -86,7 +86,9 @@ Foram 5 aulas inéditas, explorando o JavaScript para GameDev, com os instrutore
 
 ## 💻 Projeto
 
-<iframe src="https://drive.google.com/file/d/1LPqvvZl8xFzwG9JmXNoIVsQabpdwfaIL/preview" width="440" height="280"></iframe>
+<p align="center">
+  <img alt="Game Hipsta" src=".github\hipsta-game.gif" width="100%">
+</p>
 
 <p>"As Aventuras de Hipsta" é um game desenvolvido para desktop.
 
