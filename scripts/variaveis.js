@@ -22,7 +22,7 @@ let GameOver;
 
 let fita;
 let jogo;
-let cenaAtual = "jogo";
+let cenaAtual = "telaInicial";
 let cenas;
 let telaInicial;
 
